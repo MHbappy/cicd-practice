@@ -24,3 +24,5 @@ WORKDIR /app
 
 COPY --from=MAVEN_BUILD /build/target/appdemo-*.jar /app/appdemo.jar
 ENTRYPOINT ["java", "-jar", "appdemo.jar"]
+
+
