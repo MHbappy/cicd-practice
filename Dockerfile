@@ -22,7 +22,7 @@ FROM openjdk:11-slim
 
 WORKDIR /app
 
-COPY --from=MAVEN_BUILD /build/target/appdemo-*.jar /app/appdemo.jar
-ENTRYPOINT ["java", "-jar", "appdemo.jar"]
+COPY --from=MAVEN_BUILD /build/target/cicd-practice-*.jar /app/cicd-practice.jar
+ENTRYPOINT ["java", "-jar", "cicd-practice.jar"]
 
 
